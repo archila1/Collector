@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class CollectCollors : MonoBehaviour
@@ -14,7 +15,6 @@ public class CollectCollors : MonoBehaviour
 
     private void Awake()
     {
-        Time.timeScale = 1;
         SetCollors();
         SetTags();
         UpdateRightValue(0);
@@ -25,8 +25,7 @@ public class CollectCollors : MonoBehaviour
     {
         if (collectLeft <= 0 && collectRight <= 0)
         {
-            Time.timeScale = 0;       
-            win.SetActive(true);
+            SceneManager.LoadScene("Win");
         }
     }
     private void SetCollors()

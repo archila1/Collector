@@ -50,7 +50,6 @@ public class BoxCounter : MonoBehaviour
         boxesInCart++;
         if (boxesInCart > 2)
         {
-            Debug.Log($"there are {boxesInCart} boxes in cart");
             ClearBin();
         }
     }
@@ -59,7 +58,6 @@ public class BoxCounter : MonoBehaviour
     {
         if (red > 2)
         {
-            Debug.Log($"red {red}");
             if ("R" == collectCollors.leftColor.tag)
             {
                 collectCollors.UpdateLeftValue(3);
@@ -81,7 +79,6 @@ public class BoxCounter : MonoBehaviour
             collectCollors.SetTags();
         }else if (blue > 2)
         {
-            Debug.Log($"blue {red}");
             if ("B" == collectCollors.leftColor.tag)
             {
                 collectCollors.UpdateLeftValue(3);
@@ -103,7 +100,6 @@ public class BoxCounter : MonoBehaviour
             collectCollors.SetTags();
         }else if (green > 2)
         {
-            Debug.Log($"green {green}");
             if ("G" == collectCollors.leftColor.tag)
             {
                 collectCollors.UpdateLeftValue(3);
@@ -125,7 +121,6 @@ public class BoxCounter : MonoBehaviour
             collectCollors.SetTags();
         }else if (yellow > 2)
         {
-            Debug.Log($"yellow {yellow}");
             if ("Y" == collectCollors.leftColor.tag)
             {
                 collectCollors.UpdateLeftValue(3);
@@ -148,7 +143,6 @@ public class BoxCounter : MonoBehaviour
         }
         else
         {
-            Debug.Log($"lives left {lives}");
             if (boxesInCart > 4)
             {
                 
